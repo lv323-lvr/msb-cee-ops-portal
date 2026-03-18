@@ -1,0 +1,257 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>MSB CEE Operations Portal (SOP)</title>\
+    <style>\
+        :root \{\
+            --georgetown-navy: #002c62;\
+            --georgetown-gray: #A2AAAD;\
+            --alert-yellow: #fff3cd;\
+            --alert-border: #ffeeba;\
+        \}\
+        body \{\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+            margin: 0;\
+            display: flex;\
+            flex-direction: column;\
+            height: 100vh;\
+            color: #333;\
+        \}\
+        /* Header Branding */\
+        header \{\
+            background-color: var(--georgetown-navy);\
+            color: white;\
+            padding: 15px 25px;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+        /* Layout Container */\
+        .container \{\
+            display: flex;\
+            flex: 1;\
+            overflow: hidden;\
+        \}\
+        /* Sidebar Navigation */\
+        nav \{\
+            width: 250px;\
+            background-color: #f8f9fa;\
+            border-right: 1px solid #dee2e6;\
+            padding: 20px;\
+            overflow-y: auto;\
+        \}\
+        nav h3 \{ font-size: 1.1em; color: var(--georgetown-navy); \}\
+        nav ul \{ list-style: none; padding: 0; \}\
+        nav li \{ margin-bottom: 12px; \}\
+        nav a \{ text-decoration: none; color: #495057; font-size: 0.95em; \}\
+        nav a:hover \{ color: var(--georgetown-navy); font-weight: bold; \}\
+\
+        /* Main Content Area */\
+        main \{\
+            flex: 1;\
+            padding: 30px;\
+            overflow-y: auto;\
+            background-color: #fff;\
+        \}\
+\
+        /* Critical Alert Banner */\
+        .alert \{\
+            background-color: var(--alert-yellow);\
+            border: 1px solid var(--alert-border);\
+            padding: 15px;\
+            border-radius: 5px;\
+            margin-bottom: 25px;\
+            font-weight: bold;\
+            color: #856404;\
+        \}\
+\
+        /* Sections and Collapsibles */\
+        section \{ margin-bottom: 40px; \}\
+        h2 \{ border-bottom: 2px solid var(--georgetown-navy); padding-bottom: 10px; color: var(--georgetown-navy); \}\
+        \
+        details \{\
+            background: #f1f3f5;\
+            margin-bottom: 10px;\
+            padding: 15px;\
+            border-radius: 5px;\
+            border: 1px solid #e9ecef;\
+        \}\
+        summary \{\
+            font-weight: bold;\
+            cursor: pointer;\
+            outline: none;\
+            color: var(--georgetown-navy);\
+        \}\
+        .step-content \{\
+            margin-top: 15px;\
+            padding-left: 20px;\
+            line-height: 1.6;\
+        \}\
+        \
+        /* Buttons / Quick Links Grid */\
+        .grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\
+            gap: 15px;\
+            margin-bottom: 30px;\
+        \}\
+        .card \{\
+            border: 1px solid #dee2e6;\
+            padding: 15px;\
+            border-radius: 5px;\
+            background: #fff;\
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<header>\
+    <div>\
+        <strong>GEORGETOWN UNIVERSITY</strong><br>\
+        MSB Custom Executive Education\
+    </div>\
+    <div>SOP Portal v.2026</div>\
+</header>\
+\
+<div class="container">\
+    <nav>\
+        <h3>Quick Links</h3>\
+        <ul>\
+            <li><a href="https://gms.georgetown.edu/">GMS Workday</a></li>\
+            <li><a href="https://ems.georgetown.edu/">EMS Room Booking</a></li>\
+            <li><a href="#">Qualtrics Admin</a></li>\
+            <li><a href="#">MSB Payments</a></li>\
+        </ul>\
+        <h3>SOP Phases</h3>\
+        <ul>\
+            <li><a href="#initial">I. Initial Planning</a></li>\
+            <li><a href="#preprogram">II. Pre-Program</a></li>\
+            <li><a href="#oneweek">III. One Week Prior</a></li>\
+            <li><a href="#delivery">IV. Program Delivery</a></li>\
+            <li><a href="#postprogram">V. Post-Program</a></li>\
+        </ul>\
+    </nav>\
+\
+    <main>\
+        <div class="alert">\
+            \uc0\u9888 \u65039  IMPORTANT: STAFF ARE NOT AUTHORIZED TO SIGN CONTRACTS. All vendor, hotel, and restaurant agreements must be routed to MSB Payments for signature[cite: 553, 1886].\
+        </div>\
+\
+        <h1>Operations Dashboard</h1>\
+        <div class="grid">\
+            <div class="card">\
+                <strong>GCL 2026</strong><br>\
+                Status: Planning<br>\
+                <small><a href="#">Program Tracker</a> | <a href="#">Shared Drive</a></small>\
+            </div>\
+            <div class="card">\
+                <strong>LOFT 2025</strong><br>\
+                Status: Delivery<br>\
+                <small><a href="#">Program Tracker</a> | <a href="#">Shared Drive</a></small>\
+            </div>\
+        </div>\
+\
+        <section id="initial">\
+            <h2>I. Initial Planning</h2>\
+            <details>\
+                <summary>Organize Program Team</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Determine staffing needs (PM, Coordinator, Student Workers) with Assistant Dean[cite: 65, 1386].</li>\
+                        <li>Create a copy of the standard program management tracker tool[cite: 69, 1390].</li>\
+                        <li>Assistant Dean marks CEE Google Calendar and updates tracker[cite: 72, 1393].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+            <details>\
+                <summary>Space Confirmation (EMS)</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Assistant Dean books academic caserooms via EMS[cite: 103, 1423].</li>\
+                        <li>Staff book breakout rooms and special spaces (Fisher, Riggs, etc.)[cite: 121, 1441].</li>\
+                        <li>Fisher setups require email to gac48@georgetown.edu[cite: 189, 1523].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+        </section>\
+\
+        <section id="preprogram">\
+            <h2>II. Pre-Program</h2>\
+            <details>\
+                <summary>Faculty & Materials</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Request PPTs, bios, and syllabi 3 weeks prior[cite: 309, 1598].</li>\
+                        <li>Order branded merch through What\'92s Up Promotions (Dani VanScoyk/Adam Kaplan)[cite: 374, 1675].</li>\
+                        <li>Purchase HBS copyrights (one per participant)[cite: 507, 1813].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+            <details>\
+                <summary>Guest Speakers & Honoraria</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Register non-GU speakers as suppliers in GMS[cite: 563, 1895].</li>\
+                        <li>Request Speaker Bio using Exec Ed template[cite: 647, 1978].</li>\
+                        <li>Coordinate gift selection with BD and AD[cite: 569, 1901].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+        </section>\
+\
+        <section id="oneweek">\
+            <h2>III. One Week Prior</h2>\
+            <details>\
+                <summary>Logistics & Directions</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Send final logistics email with Hariri Building drop-off map.</li>\
+                        <li>Order 24x36 Foam Core signage from Celeste[cite: 901, 2225].</li>\
+                        <li>Print Name Tags/Tent Cards via Avery (msbexecedadmin login)[cite: 981, 2300].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+        </section>\
+\
+        <section id="delivery">\
+            <h2>IV. Program Delivery</h2>\
+            <details>\
+                <summary>Daily Operations</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Check in with catering/Faculty Club regarding dietary needs[cite: 1170, 2478].</li>\
+                        <li>Confirm driver location 15 mins before planned pickup[cite: 1163, 2471].</li>\
+                        <li>Take group photo (Basecamp DC) on northern Healy stairs[cite: 1122, 2433].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+        </section>\
+\
+        <section id="postprogram">\
+            <h2>V. Post-Program</h2>\
+            <details>\
+                <summary>Closeout & Actuals</summary>\
+                <div class="step-content">\
+                    <ul>\
+                        <li>Compile Qualtrics reports and send to BD/AD[cite: 1265, 2567].</li>\
+                        <li>Submit remaining vendor invoices within two weeks[cite: 1316, 2616].</li>\
+                        <li>Schedule After-Action meeting for future iteration learning[cite: 1311, 2611].</li>\
+                    </ul>\
+                </div>\
+            </details>\
+        </section>\
+    </main>\
+</div>\
+\
+</body>\
+</html>}
